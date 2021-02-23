@@ -1,9 +1,10 @@
 import 'reflect-metadata'
 import express from 'express';
 import "./database";
+
 const app = express();
 
-
+app.listen(3333,() => console.log("Server is running!"));
 /**
  * GET => Buscar
  * POST => Salvar
@@ -28,5 +29,5 @@ const app = express();
 
  });
 
-app.listen(3333,() => console.log("Server is running!"));
+
 
