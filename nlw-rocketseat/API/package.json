@@ -5,14 +5,17 @@
   "repository": "https://github.com/JoaopauloRM700/NodeJS.git",
   "author": "João Paulo Reis Marques <joaopaulo.rm7@gmail.com>",
   "license": "MIT",
-  "scripts":{
-    "dev": "ts-node-dev --trabspile-only --ignore-watch node_modules src/server.ts"
+  "scripts": {
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
   },
   "dependencies": {
     "-": "^0.0.1",
     "D": "^1.0.0",
     "express": "^4.17.1",
-    "ts-node-dev": "^1.1.1"
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.0.2",
+    "ts-node-dev": "^1.1.1",
+    "typeorm": "^0.2.31"
   },
   "devDependencies": {
     "@types/express": "^4.17.11",
