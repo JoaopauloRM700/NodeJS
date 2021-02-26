@@ -23,4 +23,4 @@ class Survey{
     }
 }
 
-export {Survey}
+export {Survey};

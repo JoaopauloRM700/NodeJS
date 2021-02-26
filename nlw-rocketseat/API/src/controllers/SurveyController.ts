@@ -4,7 +4,7 @@ import { getCustomRepository } from "typeorm";
 import { SurveysRepository } from "../repositories/SurveysRepository";
 
 
-class SurveysController{
+class SurveyController{
 
     async create(request: Request, response: Response){
         const { title, description } = request.body;
@@ -12,8 +12,8 @@ class SurveysController{
         const surveysRepository = getCustomRepository(SurveysRepository);
 
         const survey = surveysRepository.create({
-            title, 
-            description,
+            title,
+            description
         });
 
         await surveysRepository.save(survey);
@@ -33,4 +33,4 @@ class SurveysController{
 
 }
 
-export {SurveysController}
+export {SurveyController}
